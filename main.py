@@ -29,7 +29,11 @@ if DOCS_FLAG is False:
 
 app = FastAPI(**config)
 
-origins = [os.environ.get('SALESFORCE_URL', '*')]
+salesforce_url = os.environ.get('SALESFORCE_URL')
+if salesforce_url is not None:
+    origins = salesforce_url.split(',')
+else:
+    origins = ['*']
 
 app.add_middleware(
     CORSMiddleware,
