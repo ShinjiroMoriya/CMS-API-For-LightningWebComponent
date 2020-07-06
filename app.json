@@ -1,7 +1,7 @@
 {
-  "name": "Cloudinary API for LWC",
-  "description": "Cloudinary API for LWC",
-  "keywords": ["python", "cloudinary", "lwc"],
+  "name": "CMS API for LWC",
+  "description": "CMS API for LWC",
+  "keywords": ["python", "cloudinary", "Lightning Web Component"],
   "addons": [
     "cloudinary:starter"
   ],
@@ -12,6 +12,15 @@
   ],
   "env": {
     "SALESFORCE_URL": {
+      "required": true
+    },
+    "QUIP_ACCESS_TOKEN": {
+      "required": true
+    },
+    "QUIP_CLIENT_ID": {
+      "required": true
+    },
+    "QUIP_CLIENT_SECRET": {
       "required": true
     },
     "DOCS_FLAG": {
