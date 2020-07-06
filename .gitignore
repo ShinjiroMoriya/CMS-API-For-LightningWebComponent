@@ -1,0 +1,6 @@
+.idea/
+.env
+.python-version
+.DS_Store
+_*/
+__*/

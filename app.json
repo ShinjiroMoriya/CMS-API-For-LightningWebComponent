@@ -1,0 +1,21 @@
+{
+  "name": "Cloudinary API for LWC",
+  "description": "Cloudinary API for LWC",
+  "keywords": ["python", "cloudinary", "lwc"],
+  "addons": [
+    "cloudinary:starter"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "SALESFORCE_URL": {
+      "required": true
+    },
+    "DOCS_FLAG": {
+      "required": false
+    }
+  }
+}
